@@ -3,26 +3,25 @@
 // corresponder a nenhum mês, exiba "Mês inválido"
 
 function obterNomeDoMes(numeroMes) {
-    const meses = [
-      "Janeiro",
-      "Fevereiro",
-      "Março",
-      "Abril",
-      "Maio",
-      "Junho",
-      "Julho",
-      "Agosto",
-      "Setembro",
-      "Outubro",
-      "Novembro",
-      "Dezembro"
+    let meses = [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto",
+        "Setembro",
+        "Outubro",
+        "Novembro",
+        "Dezembro"
     ];
-  
     if (numeroMes >= 1 && numeroMes <= 12) {
-      return meses[numeroMes - 1];
+        return meses[numeroMes - 1];
     } else {
-      return "Mês inválido";
+        return "Mês inválido";
     }
-  }
+}
 
-  console.log(obterNomeDoMes(2))
+console.log(obterNomeDoMes(1));
